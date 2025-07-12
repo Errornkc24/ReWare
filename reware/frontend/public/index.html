@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10b981" />
+    <meta
+      name="description"
+      content="ReWear - Sustainable Clothing Exchange Platform. Swap clothes, save the planet, and build a community of conscious fashion lovers."
+    />
+    <meta name="keywords" content="sustainable fashion, clothing swap, eco-friendly, second-hand clothes, fashion exchange, green fashion" />
+    <meta name="author" content="ReWear Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rewear-app.vercel.app/" />
+    <meta property="og:title" content="ReWear - Sustainable Clothing Exchange" />
+    <meta property="og:description" content="Swap clothes, save the planet, and build a community of conscious fashion lovers." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rewear-app.vercel.app/" />
+    <meta property="twitter:title" content="ReWear - Sustainable Clothing Exchange" />
+    <meta property="twitter:description" content="Swap clothes, save the planet, and build a community of conscious fashion lovers." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>ReWear - Sustainable Clothing Exchange</title>
+    
+    <style>
+      /* Loading spinner styles */
+      .loading-spinner {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: #fff;
+        animation: spin 1s ease-in-out infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+      }
+      
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Focus styles for accessibility */
+      *:focus {
+        outline: 2px solid #10b981;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <!-- Loading screen -->
+      <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        color: white;
+        font-family: 'Inter', sans-serif;
+      ">
+        <div style="text-align: center;">
+          <div style="
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin: 0 auto 20px;
+          "></div>
+          <h1 style="margin: 0; font-size: 24px; font-weight: 600;">ReWear</h1>
+          <p style="margin: 10px 0 0; opacity: 0.8; font-size: 14px;">Sustainable Clothing Exchange</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
